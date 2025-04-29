@@ -41,7 +41,7 @@ ZeroDayLite/
 
 ### 1. Clone the Repository
 
-```bash
+
 git clone https://github.com/YOUR_USERNAME/ZeroDayLite.git
 cd ZeroDayLite
 
@@ -57,7 +57,7 @@ Ensure you have:
 
 ### 4. Database (Optional)
 If using MySQL:
-```sql
+
 --->Create a DB and import from /database/setup.sql
 --->Update DB credentials in DBConnection.java
 

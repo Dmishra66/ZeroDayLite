@@ -39,7 +39,7 @@ ZeroDayLite/
 ### 1. Clone the Repository
 
 
-git clone https://github.com/YOUR_USERNAME/ZeroDayLite.git
+git clone https://github.com/Dmishra66/ZeroDayLite.git
 cd ZeroDayLite
 
 ### 2. Open in IDE

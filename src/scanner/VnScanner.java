@@ -110,15 +110,13 @@ public class VnScanner {
     }
 
     private static void logScan(String username, String type, String result) {
-        try (Connection conn = DBConnection.getConnection()) {
-            String insert = "INSERT INTO scans(username, scan_type, scan_result) VALUES(?,?,?)";
-            PreparedStatement stmt = conn.prepareStatement(insert);
-            stmt.setString(1, username);
-            stmt.setString(2, type);
-            stmt.setString(3, result);
-            stmt.executeUpdate();
-        } catch (SQLException e) {
-            e.printStackTrace();
-        }
+    try (FileWriter writer = new FileWriter("assets/scan_logs.txt", true)) {
+        String logEntry = String.format("%s | %s | %s | %s%n",
+                java.time.LocalDateTime.now(), username, type, result);
+        writer.write(logEntry);
+    } catch (IOException e) {
+        e.printStackTrace();
     }
+   }
 }
+

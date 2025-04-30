@@ -14,8 +14,7 @@ This project includes:
 - 📚 Vulnerability Education Panel with expandable sections
 - 🧰 Payload Builder with obfuscation, templates & preview
 - 💡 Rotating Security Tips with animations
-- 🎮 Fun Games (3 included)
-- 📊 Statistics & Badge Tracking
+- 📊 Statistics & points Tracking
 
 ---
 
@@ -28,10 +27,8 @@ ZeroDayLite/
 │   ├── gui/ # All Java Swing GUI panels
 │   ├── scanner/ # Core scanner logic 
 │   ├── utils/ # Reusable helpers (stats, animations, DB, etc.) 
-│   ├── game/ # 3 interactive games for learning 
 |   └── Main.java # Entry point 
 ├── lib/ # External libraries (e.g., Jsoup for HTML parsing, all the jar files)
-├── database/ # SQL schema for using MySQL(schema.sql)
 ├── README.md
 └── .gitignore
 
@@ -55,18 +52,11 @@ Ensure you have:
 
 --->Run Main.java to start the application.
 
-### 4. Database (Optional)
-If using MySQL:
-
---->Create a DB and import from /database/setup.sql
---->Update DB credentials in DBConnection.java
-
 ---
 
 ## 🧰 Dependencies
 >javax.swing — UI framework
 >org.jsoup — for HTML parsing (included in lib/)
->mysql-connector-java — for database connection (if used)
 
 ---
 
